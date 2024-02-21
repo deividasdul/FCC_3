@@ -1,0 +1,90 @@
+.css-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: 100%;
+}
+
+html:not(.website) {
+  display: grid;
+  min-height: 100%;
+  line-height: 25px;
+}
+
+.nav-link {
+  display: block;
+  border-top: 1px solid black;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.15s ease-out;
+}
+
+.nav-link:last-child {
+  border-bottom: 1px solid black;
+}
+
+.nav-link:hover {
+  background-color: rgb(217, 217, 217);
+  font-weight: bold;
+}
+
+body {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: black;
+}
+
+#navbar {
+  border-right: 1px solid black;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  opacity: 1;
+}
+
+#main-doc {
+  margin-left: 20px;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+.video {
+  height: 500px;
+}
+
+.link-to-reddit {
+  font-size: 20px;
+  color: red;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  text-wrap: wrap;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+li {
+  margin-left: 25px;
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    opacity: 0;
+  }
+}
+
+.website:first-child {
+  line-height: 2px;
+  font-size: 16px;
+  margin-top: 50px;
+}
